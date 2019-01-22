@@ -1,0 +1,126 @@
+/* Brandon Lake 000766089
+ * I assert that this is all my own work, etc etc.
+ * The purpose of this class is to contain all CSS styling for the puzzle slider web game
+ * Submitted for: November 21st, 2018
+ */
+
+h1 {
+    text-align: center;
+}
+#title {
+    font-family: Impact;
+    font-size: 32px;
+    margin: 10px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2.5px;
+}
+.boardgame {
+    display: grid;
+    grid-template-rows: 0.5fr 4fr 1fr;  /* fr = fraction */
+    border: 20px solid burlywood;
+    border-radius: 25px;
+    width: 346px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("images/wood.jpg");
+}
+button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+button:focus {
+    outline: 0;
+}
+#titleBar {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    height: 64px;
+}
+#help {
+    height: 40px;
+    width: 40px;
+    font-size: 2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    visibility: hidden;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 316px;
+    height: 316px;
+    border: 15px solid sienna;
+    margin: auto;
+    visibility: hidden;
+}
+.piece {
+    border: 2px solid sienna;
+    height: 75px;
+}
+#info {
+    display: grid;
+    grid-row: 1/span 4;
+    grid-column: 1/span 4;
+    color: whitesmoke;
+    visibility: hidden;
+    margin-top: -30px;
+}
+#info > h1 {
+    margin-bottom: 0px;
+}
+#info > button {
+    width: 200px;
+    height: 40px;
+    font-size: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+ol {
+    font-size: 1.2em;
+}
+li {
+    margin: 5px;
+}
+#curtain {
+    display: grid;
+    grid-row: 2/span 4;
+    border: 15px solid sienna;
+    visibility: hidden;
+}
+.buttons {
+    width: 316px;
+    height: 60px;
+    padding: 15px 10px 15px 15px;
+    vertical-align: middle;
+}
+#shuffle {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: black 1px 1px 2px 2px;
+    float: left;
+    margin-top: 5px;
+}
+#moves {
+    font-family: Impact;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
+    float: right;
+    margin-top: 8px;
+    visibility: hidden;
+}
+#score {
+    visibility: hidden;
+    margin-top: 0px;
+    font-size: 30px;
+    text-align: center
+}

@@ -1,0 +1,71 @@
+<!-- 
+Brandon Lake 000766089
+I assert that this is all my own work, etc etc.
+This html file contains the framework for a 15 tile puzzle slider game.
+Submitted for: November 21st, 2018
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sliding Puzzle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/mycss.css" />
+    <script src="js/myjs.js"></script>
+    <script src="js/jquery-1.10.0.js"></script>
+</head>
+
+<body>
+    <div class="boardgame">
+        <div id="titleBar">
+            <button id="help" onclick="helpMenu()">?</button>
+            <h1 id="title"></h1>
+        </div>
+        <div id="container">
+            <div id="00" class="piece" onclick="move(0, 0)" onmousedown="return false"><img src="images/1.jpg" alt="1"></div>
+            <div id="01" class="piece" onclick="move(0, 1)" onmousedown="return false"><img src="images/2.jpg" alt="2"></div>
+            <div id="02" class="piece" onclick="move(0, 2)" onmousedown="return false"><img src="images/3.jpg" alt="3"></div>
+            <div id="03" class="piece" onclick="move(0, 3)" onmousedown="return false"><img src="images/4.jpg" alt="4"></div>
+
+            <div id="10" class="piece" onclick="move(1, 0)" onmousedown="return false"><img src="images/5.jpg" alt="5"></div>
+            <div id="11" class="piece" onclick="move(1, 1)" onmousedown="return false"><img src="images/6.jpg" alt="6"></div>
+            <div id="12" class="piece" onclick="move(1, 2)" onmousedown="return false"><img src="images/7.jpg" alt="7"></div>
+            <div id="13" class="piece" onclick="move(1, 3)" onmousedown="return false"><img src="images/8.jpg" alt="8"></div>
+
+            <div id="20" class="piece" onclick="move(2, 0)" onmousedown="return false"><img src="images/9.jpg" alt="9"></div>
+            <div id="21" class="piece" onclick="move(2, 1)" onmousedown="return false"><img src="images/10.jpg" alt="10"></div>
+            <div id="22" class="piece" onclick="move(2, 2)" onmousedown="return false"><img src="images/11.jpg" alt="11"></div>
+            <div id="23" class="piece" onclick="move(2, 3)" onmousedown="return false"><img src="images/12.jpg" alt="12"></div>
+
+            <div id="30" class="piece" onclick="move(3, 0)" onmousedown="return false"><img src="images/13.jpg" alt="13"></div>
+            <div id="31" class="piece" onclick="move(3, 1)" onmousedown="return false"><img src="images/14.jpg" alt="14"></div>
+            <div id="32" class="piece" onclick="move(3, 2)" onmousedown="return false"><img src="images/15.jpg" alt="15"></div>
+            <div id="33" class="piece" onclick="move(3, 3)" onmousedown="return false"><img style="opacity: 0" src="images/16.jpg" alt="16"></div>
+            <div id="info">
+                <h1>How to Play?</h1>
+                <ol>
+                    <li>This game is a classic 15 piece puzzle slider</li>
+                    <li>The goal of this game is to return the puzzle to its default state</li>
+                    <li>The only rule is that puzzle pieces can only be moved into the empty square!</li>
+                    <li>If you get stuck, just click the "Help me I'm stuck!" button</li>
+                </ol>
+                <button onclick="exitHelp()">Okay, got it!</button>
+            </div>
+        </div>
+        <div id="curtain">
+            <img src="images/winner.jpg" alt="Winner!">
+        </div>
+        <div class="buttons">
+            <button id="shuffle" onclick="shuffleBoard()">Let's Play!</button>
+            <p id="moves">Moves: 0</p>
+        </div>
+    </div>
+    <div class="score" style="text-align: center">
+        <p id="score">Score: 1500</p>
+    </div>
+</body>
+
+</html>
